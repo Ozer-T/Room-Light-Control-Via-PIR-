@@ -1,0 +1,80 @@
+//This project made by ZEROCYCLE at April 2017
+//Be careful at dealing with HIGH CURRENT 
+//If you are not adult, do not attempt to do it!
+//Make sure that you have all safety equipments in the place and use them! 
+//Cut the lights which you want to connect the room's wall before the process
+//No responsibility is taken from me. This is your risk and your choice. Be careful!! :)
+
+
+#define role 5
+#define led 6
+#define buzzer 7
+#define sensor 5
+boolean currentstat= false;
+
+void intro(size_t);
+
+
+void setup() {
+  
+  pinMode(led,OUTPUT);
+  pinMode(buzzer,OUTPUT);
+  pinMode(sensor,INPUT);
+  pinMode(role, OUTPUT);
+  Serial.begin(9600);
+  intro(300);
+}
+ 
+void loop() {
+
+
+
+boolean kontrol=digitalRead(sensor);
+
+if(kontrol==HIGH){
+Serial.println("Algiladi   +++++++++++++++++++");
+digitalWrite(led,HIGH);
+
+
+  !currentstat;
+  
+  
+    if(currentstat==true)       { digitalWrite(role,LOW); currentstat=false;}
+    else if(currentstat==false) {digitalWrite(role,HIGH); currentstat=true;}
+  
+//delay(1000);
+
+}//outer if
+
+else{
+Serial.println("Algilanmadi      -------------");
+digitalWrite(led,LOW);
+//delay(1000);
+}
+
+}//loop
+
+
+
+
+void intro(size_t x){
+  
+  size_t kontrol=80;
+  
+  for(;x>=0;x-=kontrol){
+
+      if(x<=kontrol) break;
+      else if(x<=140) kontrol=10;
+      
+    digitalWrite(led,HIGH);
+    tone(buzzer,3000,x);
+    //digitalWrite(buzzer,HIGH);
+    delay(x);
+    digitalWrite(led,LOW);
+    //digitalWrite(buzzer,LOW);
+    delay(x);
+   }
+  digitalWrite(buzzer,LOW);
+  digitalWrite(led,LOW);
+
+}
