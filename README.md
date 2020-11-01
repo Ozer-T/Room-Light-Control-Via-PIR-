@@ -1,4 +1,4 @@
-# Room-Light-Control-Via-PIR [![HitCount](http://hits.dwyl.com/ozert/Room-Light-Control-Via-PIR.svg)](http://hits.dwyl.com/ozert/Room-Light-Control-Via-PIR)
+# Room-Light-Control-Via-PIR ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fozert%2FRoom-Light-Control-Via-PIR)
 
 
 
