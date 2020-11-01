@@ -1,4 +1,4 @@
-# Room-Light-Control-Via-PIR- [![HitCount](http://hits.dwyl.com/Ozer-T/Room-Light-Control-Via-PIR-.svg)](http://hits.dwyl.com/Ozer-T/Room-Light-Control-Via-PIR-)
+# Room-Light-Control-Via-PIR [![HitCount](http://hits.dwyl.com/ozert/Room-Light-Control-Via-PIR.svg)](http://hits.dwyl.com/ozert/Room-Light-Control-Via-PIR)
 
 //This project made by ZEROCYCLE at April 2017
 //Be careful at dealing with HIGH CURRENT 
